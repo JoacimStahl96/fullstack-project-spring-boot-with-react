@@ -1,0 +1,102 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "Poppins", sans-serif;
+}
+
+::selection {
+	color: #ffff;
+	background: rgb(142, 73, 232);
+}
+
+body {
+	width: 100%;
+	height: 100vh;
+	padding: 10px;
+	background: linear-gradient(to bottom, #68eacc 0%, #497be8 100%);
+}
+
+.wrapper {
+	margin: 0px auto;
+	background-color: #497be8;
+	width: 600px;
+	height: inherit;
+}
+
+header {
+	text-align: center;
+	font-size: xx-large;
+}
+
+ul {
+	width: 400px;
+	margin: auto;
+}
+
+li {
+	background-color: white;
+	margin: 10px 0;
+	padding: 20px;
+	list-style-type: none;
+}
+
+li .btn {
+	float: right;
+}
+
+.btn {
+	background-color: rgb(142, 73, 232);
+	color: white;
+	border: none;
+	padding: 3px 10px;
+	text-align: center;
+	text-decoration: none;
+	font-size: 16px;
+}
+
+form {
+	background-color: white;
+	width: 400px;
+	height: auto;
+	padding: 30px;
+	margin: 0px auto 50px;
+}
+
+form .form-title {
+	text-align: center;
+	color: rgb(142, 73, 232);
+}
+
+form input {
+	width: 70%;
+	float: right;
+}
+
+form .btn {
+	margin-top: 10px;
+	align-self: center;
+}
+#labelId {
+	float: right;
+	margin-right: 50px;
+}
+.divCreateStudent {
+	width: 100%;
+	margin-bottom: 12px;
+}
+.input-checkbox {
+	float: left;
+}
+#deleteBtn {
+	float: right;
+	margin-right: 50px;
+}
+#editBtn {
+	float: left;
+	margin-left: 50px;
+}
+#updateText {
+	margin-top: 0px;
+	margin-bottom: 10px;
+}
