@@ -24,9 +24,9 @@ const UpdateStudents = (props) => {
 	return (
 		<div className="wrapper">
 			<form onSubmit={() => editHandler()}>
-				<h2 id="updateText" onClick={() => clickHandler()}>
+				{/*<h2 id="updateText" onClick={() => clickHandler()}>
 					Edit or delete Student
-				</h2>
+	</h2> */}
 				<div className="divCreateStudent">
 					<label>
 						Name{" "}

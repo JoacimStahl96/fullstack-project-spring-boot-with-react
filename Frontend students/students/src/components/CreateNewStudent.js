@@ -87,7 +87,9 @@ const CreateNewStudent = (props) => {
 				defaultChecked={present}
 				onChange={() => setPresent(!present)}
 			></input>
-			<button type="submit">Create</button>
+			<button className="btn" type="submit">
+				Create
+			</button>
 		</form>
 	);
 };

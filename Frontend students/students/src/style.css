@@ -8,6 +8,7 @@
 ::selection {
 	color: #ffff;
 	background: rgb(142, 73, 232);
+	height: inherit;
 }
 
 body {
@@ -59,7 +60,7 @@ form {
 	background-color: white;
 	width: 400px;
 	height: auto;
-	padding: 30px;
+	padding: 40px;
 	margin: 0px auto 50px;
 }
 

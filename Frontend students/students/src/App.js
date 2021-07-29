@@ -3,6 +3,7 @@ import Title from "./components/Title";
 import UpdateStudents from "./components/UpdateStudents";
 import Students from "./components/Students";
 import CreateNewStudent from "./components/CreateNewStudent";
+import UpdateTitle from "./components/UpdateTitle";
 
 const App = () => {
 	const [view, setView] = useState("startPage");
@@ -56,12 +57,15 @@ const App = () => {
 	switch (view) {
 		case "editUpdate":
 			return (
-				<UpdateStudents
-					setView={setView}
-					deleteStudentInEdit={deleteStudentInEdit}
-					updateStudent={updateStudent}
-					specificStudent={specificStudent}
-				/>
+				<div className="wrapper">
+					<UpdateTitle setView={setView} />
+					<UpdateStudents
+						setView={setView}
+						deleteStudentInEdit={deleteStudentInEdit}
+						updateStudent={updateStudent}
+						specificStudent={specificStudent}
+					/>
+				</div>
 			);
 
 		default:
