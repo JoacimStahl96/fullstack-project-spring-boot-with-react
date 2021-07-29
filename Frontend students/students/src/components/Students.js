@@ -1,8 +1,12 @@
-import React, { useState } from "react";
+import React from "react";
 
 const Students = (props) => {
 	const getStudents = props.students;
-	const [checked, setChecked] = useState(getStudents.present);
+
+	const handleUpdatePresence = (e, student) => {
+		const isChecked = e.target.checked;
+		props.updatePresence(student, isChecked);
+	};
 
 	const linkHandler = (student) => {
 		props.setSpecificStudent(student);
@@ -14,17 +18,26 @@ const Students = (props) => {
 				return (
 					<li key={index}>
 						<a href="#" onClick={() => linkHandler(students)}>
-							{students.name} {students.last_name}{" "}
+							{students.name} {students.last_name} {students.age}{" "}
+							år
 						</a>
 
-						<label id="labelId">
+						<button
+							className="btn"
+							onClick={() => props.deleteStudent(students)}
+						>
+							X
+						</button>
+
+						<label id="labelId" htmlFor={students.id}>
 							<input
-								id="present"
+								className="input-checkbox"
 								type="checkbox"
+								id={students.id}
 								defaultChecked={students.present}
-								onChange={() => {
-									setChecked(!checked);
-								}}
+								onChange={(e) =>
+									handleUpdatePresence(e, students)
+								}
 							></input>
 							Present
 						</label>
